@@ -1,0 +1,2 @@
+C:\Program Files (x86)\nj4x\NJ4X Account Copier Demo\src\Output\nj4x_copier_demo.exe.config
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\Output\nj4x_copier_demo.exe.config

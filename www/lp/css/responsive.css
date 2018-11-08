@@ -1,0 +1,791 @@
+@charset "utf-8";
+/* CSS Document */
+section#traders div.main-title {
+    position:relative;
+    margin-top:80px;
+    padding:30px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:800px) and (max-width:1020px)  {
+
+    #trader_chart_lg {
+        position:relative;
+        top:75px;
+    }
+    .broker-selected {
+        border-radius:10px;
+        box-shadow: 0 5px 15px #333;
+        max-width:205px;
+        max-height:69px;
+        background-size:205px 69px;
+        border:solid #333 2px;
+    }
+
+}
+
+
+
+
+/*----*****---- << Responsive >> ----*****----*/
+
+/*----*****---- << Desktop >> ----*****----*/
+
+/* Note: Design for a width of 768px, Gutter: 30px, Unit: 32px */
+
+@media only screen and (min-width:1020px) and (max-width:1120px) {
+
+
+
+
+
+    .boxed .wrapper, .boxed #header { width:980px; }
+
+    .testimonial-content-wrapper { width:75%; }
+
+    .portfolio.one-third { margin-bottom:20px; width:31.8%; }
+    .portfolio.one-third .portfolio-thumb img { height:215px; }
+
+    .newsletter-form input[type="email"] { width:65.5%; }
+
+    .contact-frm > input[type="text"] { width:43.7%; }
+    .contact-frm textarea { width:42.3%; }
+    .contact-frm input[type="email"], .contact-frm input[type="tel"] { width:39.9%; }
+    .support .support-info { margin-right:39px; }
+
+}
+
+/*----*****---- << Tablet (Portrait) >> ----*****----*/
+
+/* Note: Design for a width of 768px, Gutter: 30px, Unit: 32px */
+
+@media only screen and (min-width:798px) and (max-width:1020px) {
+
+
+
+    #landing div.location {
+        border:none;
+
+    }
+
+
+
+
+
+
+
+    .container {width:900px;}
+
+    #provider div.main-title {
+        padding-top:150px;
+        text-indent:50px;
+    }
+
+    h2.trader-name { text-indent:50px;}
+    p.trader-info-tagline { text-indent:100px;}
+
+    .banner { background:#e8e8e8; min-height:500px; }
+    .banner iframe {height:360px; width:640px;}
+    /*width="640" height="360" */
+    .banner img { max-width:100%; }
+    .banner a { width:50%;}
+
+
+
+    #form-broker-register {
+        float:left;
+    }
+
+    body {background-color:#fff; font-size:13px; }
+
+
+    .boxed .wrapper, .boxed #header { width:790px; }
+
+    #logo { margin-top:17px; }
+    #logo img { max-width:190px; }
+    #main-menu ul li a { font-size:14px; padding:35px 9px; }
+
+
+
+    .one-third { width:31.3%; }
+
+    .testimonial-content-wrapper { width:68.6%; }
+
+    .service h4, .portfolio-title h4 { font-size:15px; }
+    blockquote { font-size:15px; }
+
+
+
+    .newsletter-form input[type="email"] { width:56.5%; }
+
+    .portfolio.one-third { width:31.4%; }
+    .portfolio-title { width:66.2%; }
+    .portfolio.one-third .portfolio-thumb img { height:167px; }
+
+    .portfolio-detail .views { padding:8px 18px 7px; }
+
+    .portfolio:hover .image-overlay a.link { left:26.8%; }
+    .portfolio:hover .image-overlay a.zoom { right:26.8%; }
+
+    .portfolio:hover .image-overlay a.link, .portfolio:hover .image-overlay a.zoom { top:37.2%; }
+
+    .contact-frm .twocolumn { width:48.3%; }
+    .contact-frm .twocolumn, .contact-frm > input[type="text"] { margin-right:30px; }
+    .contact-frm > input[type="text"] { width:44%; }
+    .contact-frm input[type="email"], .contact-frm input[type="tel"] { width:37.3%; }
+    .contact-frm textarea { width:42%; }
+
+    .button.ico { line-height:40px; }
+    .button.ico i { margin-right:13px; font-size:40px; }
+    .button.ico i:after { left:79px; }
+
+    .support figure { margin-top:-56px; }
+    .support .button.ico.medium { margin-left:30px; }
+    .support .ico { margin-top:5px; margin-bottom:10px; }
+
+    .aligncenter { width:100%; height:auto; }
+
+}
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+/* Note: Design for a width of 480px */
+
+
+@media only screen and (min-width: 480px) and (max-width: 797px) {
+
+
+    section#traders div.main-title {
+        position:relative;
+        margin-top:0px !important;
+        padding:15px 0 15px 0 !important;
+    }
+
+    div.landing-banner-container img {
+        display:none;
+    }
+
+    div.landing-banner-container {
+        width:100%;
+    }
+
+
+    .fb-like-box {
+        max-width:420px !important;
+        overflow:hidden;
+    }
+
+    .container {
+        width:420px;
+    }
+
+    .cta-arrow{ display:none;}
+
+
+
+
+
+
+
+
+    .boxed .wrapper, .boxed #header { width:100%; }
+
+
+    #logo { text-align: center; width: 100%; margin-top:7px; margin-bottom:5px; }
+    #logo img { max-width:200px; }
+
+    #header { border-bottom:none; }
+    #header .container { width:100%; }
+    .content { padding:69px 0 0; }
+    #home { margin:0 0 -69px; padding:71px 0 30px; }
+    .mean-container a.meanmenu-reveal { padding:24px; }
+
+
+    .banner iframe {height:360px; width:640px; }
+    .banner .button.small { padding:5px 10px 8px; font-size:12px; }
+    .banner .button span { margin-left:0; font-size:12px; }
+    .banner .button {width:50%;padding:5px;}
+    .banner { background:#e8e8e8; min-height:500px; }
+
+
+
+    h1 { line-height:60px; text-align:center; }
+
+    #main-menu { clear: both; width: 100%; }
+
+    .one-third, .column.no-space.one-fourth, .two-third, .one-fourth, .one-half, .three-fourth, .one-fifth, .four-fifth {  width:100%; }
+    .column { margin-right:0; margin-bottom:15px; }
+
+    .column.no-space.one-fourth { margin-bottom:15px; }
+
+    .progress-bar-wrapper .progress-bar-content { margin-bottom:20px; }
+
+    ul.tabs-vertical-frame { width:99%; margin-bottom:20px; }
+
+    .testimonial-content-wrapper { width:100%; text-align:center; }
+    .testimonial-wrapper figure.testimonial-thumb, .testimonial-wrapper figure.testimonial-thumb.alignright { margin:0 auto; float:none; display:inline-block; }
+
+    .newsletter-container { width:90%; }
+    .newsletter-form input[type="email"] { width:61.5%; }
+
+    .column.last .service:after, .column.last .service:before { content:""; }
+
+    .sorting-container { text-align:center; }
+    .sorting-container a { display:inline-block; float:none; }
+    .portfolio.one-third { width:100%; }
+    .portfolio.one-third .portfolio-thumb img { height:315px; }
+
+    .portfolio-thumb > img { width:100%; }
+    .portfolio-title { width:78.5%; }
+
+    .portfolio:hover .image-overlay a.link { left:38%; }
+    .portfolio:hover .image-overlay a.zoom { right:38%; }
+
+    .portfolio:hover .image-overlay a.link, .portfolio:hover .image-overlay a.zoom { top:43%; }
+
+    .contact-frm .twocolumn, .contact-frm > input[type="text"] { margin-right:0; }
+    .contact-frm > input[type="text"], .contact-frm textarea { width:91%; }
+    .contact-frm .twocolumn { width:99.5%; }
+    .contact-frm input[type="email"], .contact-frm input[type="tel"] { width:38.9%; }
+    .contact-info .one-half .one-half h4, .contact-info .one-half .one-half a { padding-left:0; }
+
+    .support .support-info { margin-right:0; padding-left:0; }
+    .support figure { float: none; margin-left: auto; margin-right: auto; margin-top: -107px; text-align: center; }
+    .support figure img { float: none; margin: 0 auto; width: auto; }
+
+    .support { text-align:center; }
+    .support .support-info { width:100%; text-align:center; }
+    .support .ico { margin-top:5px; margin-bottom:10px; }
+    footer .button.ico { float:none; }
+
+    .aligncenter { max-width:100%; height:auto; }
+
+    #toTop { bottom:10px; right:10px; }
+
+}
+
+/*----*****---- << Mobile >> ----*****----*/
+
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    body {background-color:#fff;}
+
+    .broker-selected {
+        border-radius:10px;
+        box-shadow: 0 5px 15px #333;
+        border:solid #333 2px;
+        width:205px;
+        height:69px;
+        background-size:205px 69px;
+
+    }
+
+
+
+    .fb-like-box {
+        max-width:300px !important;
+        overflow:hidden;
+    }
+
+    .cta-arrow{ display:none;}
+
+    #has-account a.button {
+        width:100% !important;
+        display:block !important;
+        text-align:center !important;
+        margin:auto;
+        float:left;
+        max-width:200px;
+
+    }
+
+    #has-account a.hasaccount {
+        padding-top:10px;
+        float:left;
+        display:block !important;
+    }
+
+    #has-account img { display:none;}
+
+    #step1 input.userName,
+    #step1 input.userEmail,
+    #step1 select
+    {
+        width:100% !important;
+        display:block;
+    }
+
+    #progressbar {
+        margin-top:20px;
+    }
+
+
+    div.trader-container {
+        max-width:285px;
+        padding:10px;
+
+    }
+    h2.trader-name { text-align:center;}
+    p.trader-info-tagline { text-align:center;}
+    #trader-name-container {
+        padding:10px 0 50px 0;
+        margin-top:20px;
+
+    }
+    div.facebook_panel,
+    div.facebook_panel .fb-like-box span,
+    div.facebook_panel .fb-like-box  {
+        max-width:285px;
+        overflow:hidden;
+        margin:0 auto;
+    }
+
+    section#faq div.main-title div.container  h2 {
+        font-size:21px;
+        text-align:center;
+
+    }
+
+
+
+    section.signup .container {
+
+    }
+
+
+    div.trader-name h2  {
+        font-size:16px;
+        font-weight:normal;
+        padding-bottom:10px;
+
+    }
+
+    span.trader-stats {
+        font-size:16px;
+    }
+
+    div.trader-name h2 i   {
+        font-size:16px;
+        font-weight:normal;
+        padding-bottom:10px;
+    }
+
+    section#traders .container {
+        max-width:280px;
+        position:relative;
+        left:-2%;
+
+    }
+
+    section#traders .main-title {
+        margin-top:25px !important;
+        position:relative;
+        padding:10px 0 0 0 !important;
+    }
+
+
+
+
+
+    section.faq .container p {
+        font-size:12px;
+    }
+
+
+
+    #step2 .margin100 {
+        height:20px;
+    }
+
+    #step2 div.margin20 {
+        display:none;
+    }
+
+
+
+
+    div.broker-rating {
+        position:relative;
+        bottom:20px;
+    }
+
+    .selected-icon {
+        color:#fff;
+        background-color:#aede38;
+        font-size:20px !important;
+        border-radius:100px;
+        text-shadow:0 2px #c0c0c0;
+        position:relative;
+        float:right;
+        top:30px !important;
+        z-index:9999;
+
+    }
+
+    .broker-name {
+        max-width:150px;
+        margin:auto;
+
+    }
+    .broker-name a img {
+        border-radius:10px;
+        width:150px;
+        height:50px;
+        border:solid #333 2px;
+        position:relative;
+        top:20px !important;
+        z-index:99;
+    }
+
+
+    .broker-name .toprated{
+        position:relative;
+        top:10px;
+    }
+
+
+
+    .broker-image  {
+        border-radius:10px;
+        box-shadow: 0px 5px 15px #333;
+        width:158px !important;
+        height:53px !important;
+        border:solid #333 2px;
+        background-size:158px 53px !important;
+        display:block;
+        background-repeat:no-repeat;
+        margin-top:5px;
+
+    }
+    .rating {
+        font-size:12px;
+        text-align:left;
+    }
+
+
+    #trade_table {
+        display:none;
+    }
+
+
+
+    .provider-container  h2 {
+        font-size:16px;
+        padding-bottom:10px;
+    }
+
+    .provider-container {
+        max-width:280px;
+    }
+
+    div.main-title {
+        padding:0;
+        height:65px;
+        margin-top:-80px;
+
+    }
+
+    #provider div.container {
+        max-width:250px;
+        position:relative;
+        left:-5%;
+    }
+
+
+    #provider div.main-title {
+        padding:15px 0 15px 0 !important;
+        margin:0;
+
+    }
+
+    #provider div.main-title h2
+    {
+        font-size:22px;
+    }
+
+    #provider input.button {
+        background-color:#aede38;
+        padding:10px;
+    }
+
+    #provider input,#provider textarea {
+        background:#fff;
+        border:1px #c0c0c0 solid;
+    }
+
+    #provider td {
+        font-size:14px;
+    }
+
+    div.main-title h2 {
+        font-size:30px;
+    }
+
+    .header-padding {
+        height:20px;
+    }
+
+    h2.trader-name {
+        font-size:30px;
+    }
+
+
+
+    .broker-description {
+        display:none;
+    }
+
+    .broker-row {
+        width:260px;
+        padding:0 !important;
+        margin:0;
+        float:left;
+
+
+    }
+
+
+    h2.trader-name i {
+        line-height:30px;
+    }
+
+    div.chart-container  {
+        display:inline-block;
+        max-width:200px;
+        max-height:250px;
+        margin-top:20px;
+        margin-left:20px;
+    }
+
+    div.chart-container-traders canvas
+    {
+        position:relative;
+        margin-top:10px;
+        left:-20px;
+        max-width:260px;
+    }
+
+    /*
+            canvas#trader_chart_large
+            {
+                display:inline-block;
+                max-width:200px;
+                max-height:250px;
+            }
+    */
+    .trader-info-data  {
+        font-size:14px;
+        font-weight:200;
+        padding:10px;
+        text-align:center;
+    }
+
+    td.trader-info-stat
+    {
+        text-align:left;
+        padding:0;
+        margin:0;
+        font-family: 'Open Sans', sans-serif;
+        color:#888;
+        text-shadow:1px 1px #fff;
+        font-weight:200;
+        font-size:12px;
+    }
+
+
+
+    .trader-action{
+        text-align:center;
+        width:100%;
+        position: relative;
+        top: 5%;
+        transform: translateY(5%);
+
+
+    }
+
+    .trader-chart {
+        position: relative;
+        top: 5%;
+        transform: translateY(5%);
+        position:relative;
+        left:20px;
+    }
+
+    div.faq-container {
+        max-width:230px;
+        margin-left:5%;
+    }
+    .mobile-menu { display:block; }
+    #main-menu ul { display:none; }
+    .container{
+        max-width:300px;
+
+    }
+
+
+    div.provider-form table td
+    {
+        display:table-row;
+
+    }
+
+    div.provider-form table {
+        border-spacing: 5px;
+        border-collapse: separate;
+    }
+
+
+    section#provider li,section#provider p {
+        font-size:14px;
+        line-height:20px;
+    }
+
+
+    section#provider h2,
+    section#home h2,
+    section#pricing h2,
+    section#services h2
+
+
+    {
+        padding-top:20px;
+    }
+
+    div.chart-summary {
+        margin-left:3%;
+    }
+
+
+    section#home p,
+    section#pricing p,
+    section#services p {
+        padding-top:20px;
+        font-size:14px;
+        line-height:18px;
+        text-indent: 20px;
+    }
+    section#provider img,
+    section#home img,
+    section#services img,
+    section#pricing img {
+        float:none;
+        margin:auto 0;
+    }
+
+
+
+
+
+
+
+    .boxed .wrapper, .boxed #header { width:100%; }
+
+
+
+    #logo { text-align: center; width: 100%; margin-top:7px; margin-bottom:5px; }
+    #logo img { max-width:130px; }
+
+    #header { border-bottom:none; }
+    #header .container { max-width:350px; margin:0; }
+    .content { padding-top:25px; }
+    #home { margin:0 0 -48px;
+        /*padding:46px 0 30px;*/
+
+    }
+
+
+    .mean-container a.meanmenu-reveal { padding:14px; }
+
+    .banner iframe {height:360px; width:640px; }
+    .banner .button.small { padding:5px 10px 8px; font-size:12px; }
+    .banner .button span { margin-left:0; font-size:12px; }
+    .banner .button {width:50%;padding:5px;}
+    .banner { background:#e8e8e8; min-height:500px; }
+
+
+    h1 { font-size:29px; line-height:39px; }
+    div.main-title {
+        padding-top:30px;
+    }
+    .main-title h2 { text-align:center; font-size:40px; }
+
+    .intro-text h2 { font-size:44px; line-height:49px; }
+
+    #main-menu { clear: both; width: 100%; }
+
+    .one-third, .column.no-space.one-fourth, .two-third, .one-fourth, .one-half, .three-fourth, .one-fifth, .four-fifth {  width:100%; }
+    .column.no-space.one-fourth.service { width:90%; }
+
+    .column { margin-right:0; margin-bottom:15px; }
+
+    .progress-bar-wrapper .progress-bar-content { margin-bottom:20px; }
+
+    ul.tabs-vertical-frame, .testimonial-content-wrapper { width:100%; }
+    .tabs-vertical-frame-content { padding-top:20px; }
+
+    .newsletter-container { padding:5px 5px 20px 5px; }
+    .newsletter-form { text-align:center;  }
+    .newsletter-form input[type="email"] { width:80%; border-radius:5px; }
+    .newsletter-form input[type="submit"] { float:none; display:inline-block; padding:10px 10px 11px; border-radius:5px; margin:10px 0 0; }
+
+    .aligncenter { width:100%; height:auto; }
+
+    .demo-btn { font-size:13px; width:100%; }
+    .demo-btn a { padding:20px; }
+    .demo-btn span { left:40.6%; font-size:15px; line-height:25px; padding:0; top:28%; height:25px; width:25px; }
+
+    .testimonial-wrapper { text-align:center; }
+    .testimonial-wrapper figure.testimonial-thumb, .testimonial-wrapper figure.testimonial-thumb.alignright { margin:0 auto; display:inline-block; text-align:center; float:none; }
+
+    .sorting-container { text-align:center; }
+    .sorting-container a { display:inline-block; float:none; }
+    .portfolio.one-third { width:100%; }
+    .portfolio.one-third .portfolio-thumb img { height:150px; }
+
+    .portfolio:hover .image-overlay a.link { left:25%; }
+    .portfolio:hover .image-overlay a.zoom { right:25%; }
+
+    .portfolio:hover .image-overlay a.link, .portfolio:hover .image-overlay a.zoom { top:35.5%; }
+
+    .portfolio-title { width:66%; }
+    .portfolio-title h4 { font-size:16px; }
+    .portfolio-detail .views { padding:8px 13px 7px; }
+
+    .contact-frm .twocolumn, .contact-frm > input[type="text"] { margin-right:0; }
+    .contact-frm > input[type="text"], .contact-frm input[type="email"], .contact-frm input[type="tel"], .contact-frm textarea { width:81%; }
+    .contact-frm .twocolumn { width:100%; }
+    .contact-info { text-align:center; }
+    .contact-info .one-half .one-half h4, .contact-info .one-half .one-half a { padding-left:0; }
+
+    .button.ico.medium { padding:7px 15px; }
+    .button.ico i { font-size:30px; margin-right:10px; padding-right:8px }
+    .button.ico { line-height:30px; font-size:15px; font-weight:300; }
+    .button.ico i:after { left:52px; }
+    .support .ico { margin-top:5px; margin-bottom:10px; }
+
+    .copyright { text-align:center; }
+    .copyright .social-media { float:none; }
+
+    .custom-services { padding-left:0; text-align:center; }
+    .custom-services span { position:inherit; margin-right:auto; margin-left:auto; display:block; }
+
+    .support .support-info { width:100%; margin:20px 0 0; padding:0; text-align:center; }
+    .support .support-info h2 { font-size:24px; line-height:30px; margin-bottom:10px; }
+    .support figure { width:100%; }
+    footer .button.ico { float:none; }
+
+    .copyright .social-media li { float:none; display:inline-block; margin:0 -2px; }
+
+    .column.last .service:after, .column.last .service:before { content:""; }
+
+    #toTop { bottom:10px; right:10px; }
+
+}

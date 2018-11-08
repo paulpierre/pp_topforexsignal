@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nj4x_copier_demo</name>
+    </assembly>
+    <members>
+        <member name="T:nj4x.CopierDemo.CopierDemo">
+            <summary>
+            <para>This is one-to-one MT4 Account copier application, NJ4X API usage sample.</para>
+            <para>You can edit nj4x_copier_demo.exe.config (App.config) to setup your own Master/Slave accounts and brokers.</para>
+            <para></para>
+            <para>What it does ...</para>
+            <list type="bullet">
+                <item>
+                    <description>Detects new orders made by a Master account and copies them to the Copier account</description>
+                </item>
+                <item>
+                    <description>Detects Master orders cancellation and cancels respective Copier account orders</description>
+                </item>
+                <item>
+                    <description>Detects closed Master oreders and closes respective Copier account orders</description>
+                </item>
+            </list>
+            <para></para>
+            <para>You can easily extend its functionality to ...</para>
+            <list type="bullet">
+                <item>
+                    <description>Handle one-to-many Master/Slave accounts</description>
+                </item>
+                <item>
+                    <description>Handle many-to-many Master/Slave accounts</description>
+                </item>
+                <item>
+                    <description>Detect pending orders modifications and reflect them in Copier account orders</description>
+                </item>
+                <item>
+                    <description>Detect partially closed Master oreders and close partially respective Copier orders</description>
+                </item>
+                <item>
+                    <description>Create Copier Orders using proportional volumes</description>
+                </item>
+                <item>
+                    <description>Map different symbols for different brokers</description>
+                </item>
+                <item>
+                    <description>Apply custom order copy filtering algorithms</description>
+                </item>
+                <item>
+                    <description>Build GUI/WEB applications on top of that</description>
+                </item>
+            </list>
+            </summary>
+        </member>
+        <member name="F:nj4x.CopierDemo.CopierDemo.TerminalHost">
+            <summary>
+            NJ4X Terminal Server host IP address
+            </summary>
+        </member>
+        <member name="F:nj4x.CopierDemo.CopierDemo.TerminalPort">
+            <summary>
+            NJ4X Terminal Server port number
+            </summary>
+        </member>
+        <member name="F:nj4x.CopierDemo.CopierDemo.MasterBroker">
+            <summary>
+            Master account broker name
+            </summary>
+        </member>
+        <member name="F:nj4x.CopierDemo.CopierDemo.MasterAccount">
+            <summary>
+            Master Account number
+            </summary>
+        </member>
+        <member name="F:nj4x.CopierDemo.CopierDemo.MasterPassword">
+            <summary>
+            Master Account password
+            </summary>
+        </member>
+        <member name="F:nj4x.CopierDemo.CopierDemo.CopierBroker">
+            <summary>
+            Slave Account Broker Name
+            </summary>
+        </member>
+        <member name="F:nj4x.CopierDemo.CopierDemo.CopierAccount">
+            <summary>
+            Slave Account number
+            </summary>
+        </member>
+        <member name="F:nj4x.CopierDemo.CopierDemo.CopierPassword">
+            <summary>
+            Slave Account password
+            </summary>
+        </member>
+        <member name="M:nj4x.CopierDemo.CopierDemo.Main(System.String[])">
+            <summary>
+            CopierDemo application entry point.
+            </summary>
+            <param name="args">no arguments are expected, all taken from nj4x_copier_demo.exe.config (App.config)</param>
+        </member>
+        <member name="T:nj4x.CopierDemo.Copier">
+            <summary>
+            Copier class implements MT4 Copier Account Logic,
+            i.e. synchronizes trading operations between Master and Copier accounts
+            </summary>
+        </member>
+        <member name="M:nj4x.CopierDemo.Copier.#ctor(System.String,System.String,System.String)">
+            <summary>
+            When constructed, tries to connect to MT4 Server immediately
+            </summary>
+            <param name="acc">MT4 account id</param>
+            <param name="passwd">MT4 account password</param>
+            <param name="broker">MT4 Broker Name (known to NJ4X Terminal Server)</param>
+        </member>
+        <member name="M:nj4x.CopierDemo.Copier.Init">
+            <summary>
+            Loads current Copier account orders at creation.
+            </summary>
+        </member>
+        <member name="M:nj4x.CopierDemo.Copier.OnChange(System.Object)">
+            <summary>
+            It is called by Master account on its position change.
+            </summary>
+            <param name="masterPositionChanges">Changes in a Master's position (IPositionChangeInfo)</param>
+        </member>
+        <member name="T:nj4x.CopierDemo.Master">
+            <summary>
+            This class implements Master MT4 account logic, 
+            i.e. detects changes to the master account and informs registered Copier accounts to reflect those changes.
+            </summary>
+        </member>
+        <member name="M:nj4x.CopierDemo.Master.#ctor(System.String,System.String,System.String)">
+            <summary>
+            When constructed, tries to connect to MT4 Server immediately
+            </summary>
+            <param name="acc">MT4 account id</param>
+            <param name="passwd">MT4 account password</param>
+            <param name="broker">MT4 Broker Name (known to NJ4X Terminal Server)</param>
+        </member>
+        <member name="M:nj4x.CopierDemo.Master.AddSlave(nj4x.CopierDemo.Copier)">
+            <summary>
+            Attaches Copier account to this Master.
+            </summary>
+        </member>
+    </members>
+</doc>

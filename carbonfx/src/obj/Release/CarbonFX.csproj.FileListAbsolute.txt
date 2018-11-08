@@ -1,0 +1,15 @@
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\nj4x_CarbonFX.exe.config
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\nj4x_CarbonFX.exe.manifest
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\nj4x_CarbonFX.application
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\nj4x_CarbonFX.exe
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\nj4x_CarbonFX.pdb
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\log4net.dll
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\Newtonsoft.Json.dll
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\nj4x.dll
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\System.Net.Http.dll
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\bin\Release\System.Net.Http.xml
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\obj\Release\CarbonFX.csprojResolveAssemblyReference.cache
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\obj\Release\nj4x_CarbonFX.exe.manifest
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\obj\Release\nj4x_CarbonFX.application
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\obj\Release\nj4x_CarbonFX.exe
+C:\Users\phr0q\Desktop\Projects\nj4x_copier\src\obj\Release\nj4x_CarbonFX.pdb

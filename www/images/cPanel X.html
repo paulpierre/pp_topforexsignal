@@ -1,0 +1,577 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+<title>cPanel X</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="shortcut icon" href="/cPanel_magic_revision_1261013131/frontend/x3/branding/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/cPanel_magic_revision_1383950603/frontend/x3/css/combined_optimized.css" />
+<style type="text/css">.spriteui_img{margin:0;padding:0;background:url("/cPanel_magic_revision_81627970271.8338/frontend/x3/branding/beyond_hosting/ui_sprites_img_skip_filetype_gif.jpg");}  #ui-aqua-hd-lt{background-position:0 -1px;width:7px;height:22px;}#ui-aqua-hd-rt{background-position:0 -25px;width:7px;height:22px;}
+
+.spriteui_img_trans{position:relative;margin:0;padding:0;top:0px;float:left;background:url("/cPanel_magic_revision_30724709371.2743/frontend/x3/branding/beyond_hosting/ui_sprites_img_only_filetype_gif.gif");} #ui-accept{background-position:0 -0px;width:16px;height:16px;}#ui-collapse{background-position:0 -16px;width:14px;height:14px;}#ui-expand{background-position:0 -30px;width:14px;height:14px;}#ui-getstart-icon{background-position:0 -44px;width:72px;height:72px;}#ui-homeb{background-position:0 -116px;width:20px;height:19px;}#ui-reject{background-position:0 -135px;width:16px;height:16px;}#ui-start32{background-position:0 -151px;width:32px;height:32px;}#ui-stop32{background-position:0 -183px;width:32px;height:32px;}#ui-x3-hd-close{background-position:0 -215px;width:16px;height:16px;}#ui-x3-hd-closehover{background-position:0 -231px;width:16px;height:16px;}
+
+.spriteui_bg{position:relative;margin:0;padding:0;top:0px;float:left;background:url("/cPanel_magic_revision_21137896960.1846/frontend/x3/branding/beyond_hosting/ui_sprites_bg_snap_to_smallest_width.png");}#ui-aqua-hd-bg{background-position:0 -0px;width:18px;height:22px;}#ui-button-bg{background-position:0 -322px;width:1px;height:22px;}#ui-button-bg-over{background-position:0 -644px;width:1px;height:22px;}#ui-tbl-bg{background-position:0 -966px;width:18px;height:22px;}#ui-tbl-bg-over{background-position:0 -1288px;width:509px;height:21px;}#ui-bg{background-position:0 -1609px;width:1px;height:1px;}
+
+.spriteheading_compleximg{position:relative;margin:0;padding:0;top:0px;float:left;background:url("/cPanel_magic_revision_28266910096.5092/frontend/x3/branding/beyond_hosting/heading_sprites_compleximg.jpg") no-repeat;}#heading-top-billboard{background-position:0 -1px;width:742px;height:145px;}
+
+.spriteheading_img{position:relative;margin:0;padding:0;top:0px;float:left;background:url("/cPanel_magic_revision_705324652.430813/frontend/x3/branding/beyond_hosting/heading_sprites_img.png");}#heading-help_off{background-position:0 -0px;width:35px;height:37px;}#heading-help_on{background-position:0 -37px;width:35px;height:37px;}#heading-home_off{background-position:0 -74px;width:35px;height:37px;}#heading-home_on{background-position:0 -111px;width:35px;height:37px;}#heading-logout_off{background-position:0 -148px;width:35px;height:37px;}#heading-logout_on{background-position:0 -185px;width:35px;height:37px;}
+
+.spriteheading_bg{position:relative;top:0px;left:0px;margin:0;padding:0;background:url("/cPanel_magic_revision_11000102148.9653/frontend/x3/branding/beyond_hosting/heading_sprites_bg_snap_to_smallest_width.png") repeat-x;}#heading-bottom_bg{background-position:0 -0px;height:23px;}#heading-top-header-bg{background-position:0 -323px;height:145px;}
+
+.box-expand-control{cursor:pointer;cursor:hand;background:url("/cPanel_magic_revision_30724709371.2743/frontend/x3/branding/beyond_hosting/ui_sprites_img_only_filetype_gif.gif") repeat;background-position:0 -30px;width:14px;height:14px;}
+
+.box-collapse-control{cursor:pointer;cursor:hand;background:url("/cPanel_magic_revision_30724709371.2743/frontend/x3/branding/beyond_hosting/ui_sprites_img_only_filetype_gif.gif") repeat;background-position:0 -16px;width:14px;height:14px;}
+
+.create-button, .input-button{background-image:url("/cPanel_magic_revision_21137896960.1846/frontend/x3/branding/beyond_hosting/ui_sprites_bg_snap_to_smallest_width.png"); background-repeat: repeat-x;}.create-button, .input-button{ background-position:0 -322px;height:22px; }
+
+.create-button:hover, .input-button:hover{background-image:url("/cPanel_magic_revision_21137896960.1846/frontend/x3/branding/beyond_hosting/ui_sprites_bg_snap_to_smallest_width.png"); background-repeat: repeat-x;}.create-button:hover, .input-button:hover{ background-position:0 -644px;height:22px; }
+
+body{background-image:url("/cPanel_magic_revision_21137896960.1846/frontend/x3/branding/beyond_hosting/ui_sprites_bg_snap_to_smallest_width.png"); background-repeat: repeat-x;}body{ background-position:0 -1609px;}
+
+h3, h6, #notices h6, #quota-warnings h6, #content-stats h6{background:url("/cPanel_magic_revision_21137896960.1846/frontend/x3/branding/beyond_hosting/ui_sprites_bg_snap_to_smallest_width.png") bottom repeat-x;}h3, h6, #notices h6, #quota-warnings h6, #content-stats h6{background-position:0 -966px;}
+ 
+.yui-panel .tl,.yui-panel .lt,.panel .tl,.panel .lt {background: url("/cPanel_magic_revision_81627970271.8338/frontend/x3/branding/beyond_hosting/ui_sprites_img_skip_filetype_gif.jpg") repeat;background-position:0 -1px;width:7px;height:22px;}
+.yui-panel .tr,.yui-panel .rt,.panel .tr,.panel .rt {background: url("/cPanel_magic_revision_81627970271.8338/frontend/x3/branding/beyond_hosting/ui_sprites_img_skip_filetype_gif.jpg") repeat;background-position:0 -25px;width:7px;height:22px;}
+.yui-panel .container-close:hover,.panel .close:hover,.panel .close.secure:hover,.panel .close.nonsecure:hover {background:url("/cPanel_magic_revision_30724709371.2743/frontend/x3/branding/beyond_hosting/ui_sprites_img_only_filetype_gif.gif") repeat;background-position:0 -231px;width:16px;height:16px;}
+.yui-panel .container-close,.panel .close,.panel .close.secure,.panel .close.nonsecure {background:url("/cPanel_magic_revision_30724709371.2743/frontend/x3/branding/beyond_hosting/ui_sprites_img_only_filetype_gif.gif") repeat;background-position:0 -215px;width:16px;height:16px;}
+.fm-panel .container-close:hover,.panel .close:hover,.panel .close.secure:hover,.panel .close.nonsecure:hover {background:url("/cPanel_magic_revision_30724709371.2743/frontend/x3/branding/beyond_hosting/ui_sprites_img_only_filetype_gif.gif") repeat;}
+.fm-panel .container-close,.panel .close,.panel .close.secure,.panel .close.nonsecure {background:url("/cPanel_magic_revision_30724709371.2743/frontend/x3/branding/beyond_hosting/ui_sprites_img_only_filetype_gif.gif") repeat;}
+</style>
+<!-- BEGIN cpanel_parsed_css.html -->
+<style type="text/css">
+.smclearbr{line-height:1px;height:1px;}.cellheading,h3,h6,#notices h6,#quota-warnings h6,#content-stats h6{background:url("/cPanel_magic_revision_1310154270/frontend/x3/branding/beyond_hosting/tbl-bg.jpg") repeat-x bottom;}.sortable th,.nonsortable th, .dynamic_table th{background-image:url("/cPanel_magic_revision_1310154270/frontend/x3/branding/beyond_hosting/tbl-bg.jpg");background-repeat:repeat-x;}h6:hover,h6.sfhover{background:url("/cPanel_magic_revision_1309409688/frontend/x3/branding/beyond_hosting/tbl-bg-over.jpg") repeat-x bottom;}.pass_bar_base,.pass_barbig_base,.progress_bar_base,.progress_barbig_base{background-image:url("/cPanel_magic_revision_1183701094/frontend/x3/branding/progress-bar-effx.png");background-repeat:repeat-x;}.accept{background:url("/cPanel_magic_revision_1200443325/frontend/x3/branding/accept.gif") no-repeat;width:16px;height:16px;}.reject{background:url("/cPanel_magic_revision_1200443325/frontend/x3/branding/reject.gif") no-repeat;width:16px;height:16px;}#ui-getstart-icon{background-position:0 0;background-image:url("/cPanel_magic_revision_1181099248/frontend/x3/branding/getstart-icon.gif");width:72px;height:72px;}.mainpopbg{background:url("/cPanel_magic_revision_1181099224/frontend/x3/images/getstart-bg.jpg") no-repeat bottom right #e4eff2;}.yui-panel .bd p.validation_msg,.panel .bd 
+p.validation_msg,.validation_msg{background:url("/cPanel_magic_revision_1200443325/frontend/x3/branding/reject.gif") no-repeat left top;}
+</style>
+<!--[if lt IE 7]>
+<style type="text/css">
+.progress_bar_base, .progress_barbig_base {background-image:none;}
+</style>
+<![endif]-->
+<!-- END cpanel_parsed_css.html -->
+
+
+<style type="text/css">
+/* css2 */
+
+
+
+
+/* end css2 */
+</style>
+<link href="/cPanel_magic_revision_1310154262/frontend/x3/branding/beyond_hosting/local_vps2.css" rel="stylesheet" type="text/css" />
+<!--[if (gt IE 6)&(lt IE 8)]>
+<style type="text/css">
+	.ls_fieldset legend{margin-top:20px}#footer ul{list-style:none;margin:0;padding:0;text-align:center}#cpanel #border-efx #content{width:100%}.sortable{margin-left:-10px}#cpanel #border-efx #content #sub{width:218px;min-height:300px;#cpanel #border-efx #content{float:left;margin:5px 0 0 12px;padding:0}#cpanel #border-efx #content #main{width:500px;float:right;min-height:300px;margin:0 15px 0 0;padding:0}.input-button{height:23px;vertical-align:bottom;margin-left:2px}.input-button:hover{height:23px;color:#014d5f;vertical-align:bottom;margin-left:2px}#optionselect-content{height:287px;padding:15px}.formbox h4{margin:5px 0 3px 0}#backup-nav ol li a:hover{cursor:hand}.or_spacer{position:relative;top:-9px}#ife-create-legend ul{margin:10px 0 10px 0}#ife-create-form fieldset{background:#fff}toptop .ife-module{padding:0 15px}#clearspambox{margin-right:30px}#ftptbl{margin-left:-27px}.yui-panel .bd p.validation_msg,.panel .bd p.validation_msg,.validation_msg{margin:0}.search-panel{height:28px;margin-bottom:0;text-align:left;width:100%}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="/cPanel_magic_revision_1349127783/frontend/x3/css/ie6-min.css" />
+<style type="text/css">
+.input-button{
+    background:url(/cPanel_magic_revision_1181099245/frontend/x3/branding/button-bg.gif) repeat-x center;
+}
+</style>
+<![endif]-->
+
+
+
+<!-- START stdmheader.html -->
+
+</head>
+<body id="cpanel_body" class="yui-skin-sam">
+<div id="cpanel">
+
+    <div id="border-efx">
+    <!--Handheld heading-->
+    
+    <!--Start Header-->
+    <div id="heading-top-header-bg" class="spriteheading_bg">
+	<div id="heading-top-billboard" class="spriteheading_compleximg">  
+	    <div id="leftheader">
+        
+		<div class="spriteheading_img" id="heading-home_off" onmouseover="this.id='heading-home_on';" onmouseout="this.id='heading-home_off';" style="cursor:pointer;cursor:hand;height:35px;display:inline">
+		    <a style="display:block; width: 100%; height: 100%; text-decoration:none" target="_top" href="../index.html">&nbsp;</a>
+		</div>
+        
+	    </div>
+	
+	    <div id="rightheader" style="float:right;">
+        
+		    <div class="spriteheading_img" id="heading-help_off" onmouseover="this.id='heading-help_on';" onmouseout="this.id='heading-help_off';" style="cursor:pointer;cursor:hand;height:35px;display:inline">
+			<a onclick="show_help(); return false;" style="display: block; height: 100%; width: 100%; text-decoration:none" target="_blank" href="../help.html?url=/frontend/x3/cron/index.html">&nbsp;</a>
+		    </div>
+		
+		<div class="spriteheading_img" id="heading-logout_off" onmouseover="this.id='heading-logout_on';" onmouseout="this.id='heading-logout_off';" style="cursor:pointer;cursor:hand;height:35px;display:inline">
+		    <a style="display: block; width: 100%; height: 100%; text-decoration:none" target="_top" href="/logout/?locale=en">&nbsp;</a>
+		</div>
+	    </div>
+	
+	    <!--This div will display logo when media-type=handheld-->
+	    <div id="handheld-head">cPanel 11</div>
+	    
+	    <div id="logo">
+		
+		<img id="logo-top-logo" alt="" src="/cPanel_magic_revision_1309394480/frontend/x3/branding/beyond_hosting/top-logo_vps2.png" class="toplogo"  />
+		
+	    </div>
+	</div>
+    </div>
+    <!--End Header-->
+    <div class="clearitsm">&nbsp;</div>
+    <!--Start Content-->
+    <div id="content">
+    <!-- END stdmheader.html -->
+
+<script type="text/javascript" src="/cPanel_magic_revision_1340834603/yui-gen/utilities_container/utilities_container.js"></script>
+<script type="text/javascript" src="/cPanel_magic_revision_1363038228/frontend/x3/js/x3_optimized.js"></script>
+<script type="text/javascript" src="/cPanel_magic_revision_1407966894/cjt/cpanel-all-min-en.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+// i18n for the CJT
+CPANEL.lang.close="close";CPANEL.lang.Close="Close";CPANEL.lang.cancel="cancel";CPANEL.lang.unlimited="unlimited";CPANEL.lang.or="or";CPANEL.lang.ajax_loading="loading...";CPANEL.lang.password_generator="Password Generator";CPANEL.lang.generate_password="Generate Password";CPANEL.lang.advanced="Advanced Options";CPANEL.lang.confirm_copy_password="I have copied this password in a safe place.";CPANEL.lang.use_password="Use Password";CPANEL.lang.length="Length";CPANEL.lang.alpha_characters="Alpha Characters";CPANEL.lang.nonalpha_characters="Non Alpha Characters";CPANEL.lang.both="Both";CPANEL.lang.lowercase="Lowercase";CPANEL.lang.uppercase="Uppercase";CPANEL.lang.numbers="Numbers";CPANEL.lang.symbols="Symbols";CPANEL.lang.password_strength="Password Strength";CPANEL.lang.passwords_match="Passwords Match";CPANEL.lang.password_validator_strength="Password strength must be at least";CPANEL.lang.password_validator_no_spaces="Password cannot have spaces.";CPANEL.lang.password_validator_no_empty="Password cannot be empty.";CPANEL.lang.password_validator_no_match="Passwords do not match.";CPANEL.lang.Validation_Errors="Validation Errors";CPANEL.lang.strength_phrase_very_weak="Very Weak";CPANEL.lang.strength_phrase_weak="Weak";CPANEL.lang.strength_phrase_ok="OK";CPANEL.lang.strength_phrase_strong="Strong";CPANEL.lang.strength_phrase_very_strong="Very Strong";CPANEL.lang.click_to_close="click to close";CPANEL.lang.toggle_more="more »";CPANEL.lang.toggle_less="less »";CPANEL.lang.Error="Error";CPANEL.lang.json_error="Error";CPANEL.lang.json_parse_failed="JSON parse failed.";CPANEL.lang.ajax_error="AJAX Error";CPANEL.lang.ajax_try_again="Please refresh the page and try again.";CPANEL.lang.Search="Search";CPANEL.lang.Simple_Search="Simple Search";CPANEL.lang.Advanced_Search="Advanced Search";CPANEL.lang.add_search_field="add search field";CPANEL.lang.remove="remove";CPANEL.lang.No_Results_Found="No Results Found";CPANEL.lang.Go_to="Go to";CPANEL.lang.Show_rows="Show rows";CPANEL.lang.contains="contains";CPANEL.lang.equals="equals";CPANEL.lang.More="More";CPANEL.lang.ajax_error_with_image=CPANEL.icons.error+" "+this.ajax_error+": "+this.ajax_try_again;CPANEL.lang.json_error_with_image=CPANEL.icons.error+" "+this.json_error+": "+this.ajax_try_again;
+// NVData
+var NVData={};
+NVData.icFAA=unescape('%7b%22ftpaccounts%22%3a1%2c%22emailmx%22%3a1%2c%22mysql-remoteaccess%22%3a3%2c%22mysql%22%3a2%2c%22phpMyAdmin%22%3a1%7d');
+//]]>
+</script>
+<!-- END stdheader.html -->
+
+
+<style type="text/css">
+.spriteicon_img_mini {float:left;margin-right:5px;background: url("/cPanel_magic_revision_49156589431.2019/frontend/x3/branding/beyond_hosting/icon_sprites_img_scale_60percent.png");} #icon-cron_mini {background-position:0 -265px;width:19px;height:19px; }
+</style>
+
+<div class="body-content">
+
+
+<div class="h1Title"><div class="spriteicon_img_mini" id="icon-cron_mini"></div>Cron Jobs</div>
+
+<p class="description">Cron jobs allow you to automate certain commands or scripts on your site. You can set a command or script to run at a specific time every day, week, etc. For example, you could set a cron job to delete temporary files every week to free up disk space.</p>
+<p class="description"><span class="warning">Warning:</span> You need to have a good knowledge of Linux commands before you can use cron jobs effectively. Check your script with your hosting administrator before adding a cron job.</p>
+
+<div id="crontab_permissions_error" style="display: none"></div>
+
+<style type="text/css">
+.cjt_notice { margin-bottom: 12px }
+</style>
+<div id="cjt_pagenotice_container"></div>
+
+<div id="crontab_interface">
+<h2>Cron Email</h2>
+<div class="highlight2">
+	Send an email every time a cron job runs. <span class="action_link" onclick="CPANEL.util.toggle_more_less(this, 'edit_cron_email')" id="email_toggle_more_less">cjt_toggle_more</span>
+	<div id="edit_cron_email" style="display: none">
+		<br />
+		<span class="description">You can have cron send an email everytime it runs a command.  If you do not want an email to be sent for an individual cron job you can redirect the command&#39;s output to /dev/null like this:</span> <code>mycommand &gt;/dev/null 2&gt;&amp;1</code>
+		<br /><br />
+		<table cellpadding="3">
+			<tr>
+				<td colspan="3">Current Email: <span id="current_email" style="font-weight: bold">topforexsignal</span></td>
+			</tr>
+			<tr>
+				<td align="right">Email:</td>
+				<td><input type="text" id="email" style="width: 200px" /></td>
+				<td width="400px"><div id="email_error"></div></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2"><input id="update_email" type="button" value="Update Email" /> <span id="email_status"></span></td>
+			</tr>
+		</table>
+	</div>
+	<div id="email_status_bar" class="cjt_status_bar" style="margin-top: 4px; margin-left: -10px"></div>
+</div>
+
+<h2>Add New Cron Job</h2>
+<div class="highlight">
+    <table cellpadding="3" border="0">
+		<tr>
+			<td align="right">Common<br />Settings:</td>
+			<td>
+				<select id="common_options" onchange="select_common_option()">
+					<option value="--">-- Common Settings --</option>
+					<option value="* * * * *">Every minute (* * * * *)</option>
+					<option value="*/5 * * * *">Every 5 minutes (*/5 * * * *)</option>
+					<option value="0,30 * * * *">Twice an hour (0,30 * * * *)</option>
+					<option value="0 * * * *">Once an hour (0 * * * *)</option>
+					<option value="0 0,12 * * *">Twice a day (0 0,12 * * *)</option>
+					<option value="0 0 * * *">Once a day (0 0 * * *)</option>
+					<option value="0 0 * * 0">Once a week (0 0 * * 0)</option>
+					<option value="0 0 1,15 * *">1st and 15th (0 0 1,15 * *)</option>
+					<option value="0 0 1 * *">Once a month (0 0 1 * *)</option>
+					<option value="0 0 1 1 *">Once a year (0 0 1 1 *)</option>
+				</select>
+			</td>
+			<td width="300px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="right">Minute:</td>
+			<td>
+				<input type="text" size="4" id="minute" />&nbsp;
+				<select style="width: 175px" id="minute_options" onchange="select_single_option('minute')">
+					<option value="--">-- Common Settings --</option>
+					<option value="*">Every minute (*)</option>
+					<option value="*/2">Every other minute (*/2)</option>
+					<option value="*/5">Every 5 minutes (*/5)</option>
+					<option value="*/10">Every 10 minutes (*/10)</option>
+					<option value="*/15">Every 15 minutes (*/15)</option>
+					<option value="0,30">Every 30 minutes (0,30)</option>
+					<option value="--">-- Minutes --</option>
+					<option value="0">:00 top of the hour (0)</option>
+					<option value="1">:01 (1)</option>
+					<option value="2">:02 (2)</option>
+					<option value="3">:03 (3)</option>
+					<option value="4">:04 (4)</option>
+					<option value="5">:05 (5)</option>
+					<option value="6">:06 (6)</option>
+					<option value="7">:07 (7)</option>
+					<option value="8">:08 (8)</option>
+					<option value="9">:09 (9)</option>
+					<option value="10">:10 (10)</option>
+					<option value="11">:11 (11)</option>
+					<option value="12">:12 (12)</option>
+					<option value="13">:13 (13)</option>
+					<option value="14">:14 (14)</option>
+					<option value="15">:15 quarter past (15)</option>
+					<option value="16">:16 (16)</option>
+					<option value="17">:17 (17)</option>
+					<option value="18">:18 (18)</option>
+					<option value="19">:19 (19)</option>
+					<option value="20">:20 (20)</option>
+					<option value="21">:21 (21)</option>
+					<option value="22">:22 (22)</option>
+					<option value="23">:23 (23)</option>
+					<option value="24">:24 (24)</option>
+					<option value="25">:25 (25)</option>
+					<option value="26">:26 (26)</option>
+					<option value="27">:27 (27)</option>
+					<option value="28">:28 (28)</option>
+					<option value="29">:29 (29)</option>
+					<option value="30">:30 half past (30)</option>
+					<option value="31">:31 (31)</option>
+					<option value="32">:32 (32)</option>
+					<option value="33">:33 (33)</option>
+					<option value="34">:34 (34)</option>
+					<option value="35">:35 (35)</option>
+					<option value="36">:36 (36)</option>
+					<option value="37">:37 (37)</option>
+					<option value="38">:38 (38)</option>
+					<option value="39">:39 (39)</option>
+					<option value="40">:40 (40)</option>
+					<option value="41">:41 (41)</option>
+					<option value="42">:42 (42)</option>
+					<option value="43">:43 (43)</option>
+					<option value="44">:44 (44)</option>
+					<option value="45">:45 quarter til (45)</option>
+					<option value="46">:46 (46)</option>
+					<option value="47">:47 (47)</option>
+					<option value="48">:48 (48)</option>
+					<option value="49">:49 (49)</option>
+					<option value="50">:50 (50)</option>
+					<option value="51">:51 (51)</option>
+					<option value="52">:52 (52)</option>
+					<option value="53">:53 (53)</option>
+					<option value="54">:54 (54)</option>
+					<option value="55">:55 (55)</option>
+					<option value="56">:56 (56)</option>
+					<option value="57">:57 (57)</option>
+					<option value="58">:58 (58)</option>
+					<option value="59">:59 (59)</option>
+				</select>
+			</td>
+			<td><div id="minute_error"></div></td>
+		</tr>
+		<tr>
+			<td align="right">Hour:</td>
+			<td>
+				<input type="text" size="4" id="hour" />&nbsp;
+				<select style="width: 175px" id="hour_options" onchange="select_single_option('hour')">
+					<option value="--">-- Common Settings --</option>
+					<option value="*">Every hour (*)</option>
+					<option value="*/2">Every other hour (*/2)</option>
+					<option value="*/3">Every 3 hours (*/3)</option>
+					<option value="*/4">Every 4 hours (*/4)</option>
+					<option value="*/6">Every 6 hours (*/6)</option>
+					<option value="0,12">Every 12 hours (0,12)</option>
+					<option value="--">-- Hours --</option>
+					<option value="0">12:00 a.m. midnight (0)</option>
+					<option value="1">1:00 a.m. (1)</option>
+					<option value="2">2:00 a.m. (2)</option>
+					<option value="3">3:00 a.m. (3)</option>
+					<option value="4">4:00 a.m. (4)</option>
+					<option value="5">5:00 a.m. (5)</option>
+					<option value="6">6:00 a.m. (6)</option>
+					<option value="7">7:00 a.m. (7)</option>
+					<option value="8">8:00 a.m. (8)</option>
+					<option value="9">9:00 a.m. (9)</option>
+					<option value="10">10:00 a.m. (10)</option>
+					<option value="11">11:00 a.m. (11)</option>
+					<option value="12">12:00 p.m. noon (12)</option>
+					<option value="13">1:00 p.m. (13)</option>
+					<option value="14">2:00 p.m. (14)</option>
+					<option value="15">3:00 p.m. (15)</option>
+					<option value="16">4:00 p.m. (16)</option>
+					<option value="17">5:00 p.m. (17)</option>
+					<option value="18">6:00 p.m. (18)</option>
+					<option value="19">7:00 p.m. (19)</option>
+					<option value="20">8:00 p.m. (20)</option>
+					<option value="21">9:00 p.m. (21)</option>
+					<option value="22">10:00 p.m. (22)</option>
+					<option value="23">11:00 p.m. (23)</option>
+				</select>
+			</td>
+			<td><div id="hour_error"></div></td>
+		</tr>
+		<tr>
+			<td align="right">Day:</td>
+			<td>
+				<input type="text" size="4" id="day" />&nbsp;
+				<select style="width: 175px" id="day_options" onchange="select_single_option('day')">
+					<option value="--">-- Common Settings --</option>
+					<option value="*">Every day (*)</option>
+					<option value="*/2">Every other day (*/2)</option>
+					<option value="1,15">1st and 15th (1,15)</option>
+					<option value="--">-- Days --</option>
+					<option value="1">1st (1)</option>
+					<option value="2">2nd (2)</option>
+					<option value="3">3rd (3)</option>
+					<option value="4">4th (4)</option>
+					<option value="5">5th (5)</option>
+					<option value="6">6th (6)</option>
+					<option value="7">7th (7)</option>
+					<option value="8">8th (8)</option>
+					<option value="9">9th (9)</option>
+					<option value="10">10th (10)</option>
+					<option value="11">11th (11)</option>
+					<option value="12">12th (12)</option>
+					<option value="13">13th (13)</option>
+					<option value="14">14th (14)</option>
+					<option value="15">15th (15)</option>
+					<option value="16">16th (16)</option>
+					<option value="17">17th (17)</option>
+					<option value="18">18th (18)</option>
+					<option value="19">19th (19)</option>
+					<option value="20">20th (20)</option>
+					<option value="21">21st (21)</option>
+					<option value="22">22nd (22)</option>
+					<option value="23">23rd (23)</option>
+					<option value="24">24th (24)</option>
+					<option value="25">25th (25)</option>
+					<option value="26">26th (26)</option>
+					<option value="27">27th (27)</option>
+					<option value="28">28th (28)</option>
+					<option value="29">29th (29)</option>
+					<option value="30">30th (30)</option>
+					<option value="31">31st (31)</option>
+				</select>
+			</td>
+			<td><div id="day_error"></div></td>
+		</tr>
+		<tr>
+			<td align="right">Month:</td>
+			<td>
+				<input type="text" size="4" id="month" />&nbsp;
+				<select style="width: 175px" id="month_options" onchange="select_single_option('month')">
+					<option value="--">-- Common Settings --</option>
+					<option value="*">Every month (*)</option>
+					<option value="*/2">Every other month (*/2)</option>
+					<option value="*/4">Every 3 months (*/4)</option>
+					<option value="1,7">Every 6 months (1,7)</option>
+					<option value="--">-- Months --</option>
+					<option value="1">January (1)</option>
+					<option value="2">February (2)</option>
+					<option value="3">March (3)</option>
+					<option value="4">April (4)</option>
+					<option value="5">May (5)</option>
+					<option value="6">June (6)</option>
+					<option value="7">July (7)</option>
+					<option value="8">August (8)</option>
+					<option value="9">September (9)</option>
+					<option value="10">October (10)</option>
+					<option value="11">November (11)</option>
+					<option value="12">December (12)</option>
+				</select>
+			</td>
+			<td><div id="month_error"></div></td>
+		</tr>
+		<tr>
+			<td align="right">Weekday:</td>
+			<td>
+				<input type="text" size="4" id="weekday" />&nbsp;
+				<select style="width: 175px" id="weekday_options" onchange="select_single_option('weekday')">
+					<option value="--">-- Common Settings --</option>
+					<option value="*">Every weekday (*)</option>
+					<option value="1-5">Mon thru Fri (1-5)</option>
+					<option value="0,6">Sat and Sun (6,0)</option>
+					<option value="1,3,5">Mon, Wed, Fri (1,3,5)</option>
+					<option value="2,4">Tues, Thurs (2,4)</option>
+					<option value="--">-- Weekdays --</option>
+					<option value="0">Sunday (0)</option>
+					<option value="1">Monday (1)</option>
+					<option value="2">Tuesday (2)</option>
+					<option value="3">Wednesday (3)</option>
+					<option value="4">Thursday (4)</option>
+					<option value="5">Friday (5)</option>
+					<option value="6">Saturday (6)</option>
+				</select>
+			</td>
+			<td><div id="weekday_error"></div></td>
+		</tr>
+		<tr>
+			<td align="right">Command:</td>
+			<td colspan="2" style="width: 500px">
+				<input type="text" size="45" id="command" /> <span id="command_error"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2">
+				<input type="button" id="add_new_cron" value="Add New Cron Job" /> <span id="add_new_cron_status"></span>
+			</td>
+		</tr>
+	</table>
+	<div style="height: 4px"></div>
+	<div id="add_cron_status_bar" class="cjt_status_bar"></div>
+</div>
+
+<h2>Current Cron Jobs</h2>
+
+<div id="cron_jobs"></div>
+
+</div><!-- end crontab_interface -->
+
+<script type="text/javascript">
+//<![CDATA[
+var SYSTEM_ACCOUNT = 'topforexsignal';
+var CRONTAB_PERMISSIONS_ERROR;
+(YAHOO.util.Dom.get("crontab_permissions_error").innerHTML == "") ? CRONTAB_PERMISSIONS_ERROR = false : CRONTAB_PERMISSIONS_ERROR = true;
+var LANG = {
+	cron_field_not_valid : "Cron field not formatted correctly.",
+	command_not_empty : "Command cannot be empty.",
+	edit_successful : "Edit Successful",
+	editing_cron_job : "editing cron job...",
+	added_cron_job : "Added Cron Job",
+	adding_cron_job : "adding cron job...",
+	unknown_error : "Unknown error.",
+	cron_job_deleted : "Cron Job Deleted",
+	deleting_cron_job : "deleting cron job...",
+	cron_valid_email : "Email must be a valid email address, empty, or the system account.",
+	email_address : "Email Address",
+	confirm_empty_email : "Are you sure you do NOT want to receive emails when cron runs?",
+	email_updated : "Email Updated",
+	changing_email : "changing email...",
+	none : "none",
+	Minute : "Minute",
+	Hour : "Hour",
+	Day : "Day",
+	Month : "Month",
+	Weekday : "Weekday",
+	Command : "Command"
+};
+//]]>
+
+
+var demo_mode = false;
+
+</script>
+
+<!-- end cpanelfeature cron -->
+</div><!-- end body-content -->
+
+<!-- START stdfooter.html -->
+<div class="clearitmed">&nbsp;</div>
+</div><!--Close Content Div-->
+ 
+
+
+<!--Start Footer-->
+		<div id="heading-bottom_bg" class="spriteheading_bg footer">
+			<ul class="links footer_ul">
+				<li class="footer_li"><a class="footer_li_a bottomlink" href="../index.html">Home</a></li>
+				<li class="footer_li"><a class="footer_li_a" href="../trademarks.html" target="_blank">Trademarks</a></li>
+				
+                <li class="footer_li"><a onclick="show_help(); return false;" target="_blank" href="../help.html?url=/frontend/x3/cron/index.html" class="bottomlink footer_li_a">Help</a></li>
+                
+				<li class="footer_li"><a href="http://www.cpanel.net/docs/cpanel/index.cgi?build=11.44.1.18&amp;basetheme=x3&amp;theme=x3" target="_blank" class="bottomlink footer_li_a">Documentation</a></li>
+            
+                <li class="footer_li"><a href="../contact/contactinfo.html" class="bottomlink footer_li_a" target="_blank">Contact</a></li>
+            
+				<li class="footer_li"><a href="/logout/" class="bottomlink footer_li_a">Logout</a></li>
+			</ul>
+		</div>
+		<div id="footer_border"></div>
+		<!--End Footer-->
+	</div><!--Close border-efx div-->
+</div><!--Close cpanel div-->
+
+<!-- Start Help Code -->
+<div style="display:none;" id="win">
+	<div class="hd">
+		<div class="lt"></div>
+		<span>Interface Help</span>
+		<div class="rt"></div>
+	</div>
+
+	<div class="bd">
+		<div class="content" id="help-content" style="height:400px;">
+			
+<p><strong>What is a cron job?</strong></p>
+<p>A cron job allows you to set the interval at which a  server command or script is executed. This feature is helpful for running repetitive tasks automatically.</p>
+<p><strong>Send an email every time a cron job runs</strong></p>
+<ol>
+<li>Enter an email address in the <em>Email</em> box.</li>
+<li>Click <em>Update Email</em>.</li>
+</ol>
+
+<p><strong>Note: </strong>If you do not want to receive an email notificatoin for an individual cron job,  redirect the cron job's output to /dev/null by entering <em>mycommand >/dev/null 2>&1</em> (replacing <em>mycommand</em> with your command or script).
+</p>
+<p><strong>Add a new cron job</strong></p>
+<ol>
+<li>Click one of the <em>Common Settings</em> menus and select the appropriate interval, OR enter an interval using the <em>Minute</em>, <em>Hour</em>,<em> Day</em>,<em> Month,</em> and <em>Weekday</em> boxes.</li>
+<li>Enter the command or script in the <em>Command</em> box.</li>
+<li>Click <em>Add New Cron Job</em>.</li>
+</ol>
+
+<p><strong>Edit a cron job</strong></p>
+<ol>
+<li>Click <em>Edit</em> to the right of the appropriate command in the <em>Current Cron Jobs</em> table.</li>
+<li>Click the <em>Common Settings</em> menu and select the appropriate interval, OR enter an interval using the <em>Minute</em>, <em>Hour</em>, <em>Day</em>, <em>Month</em>, and <em>Weekday</em> boxes.</li>
+<li>Enter the command or script in the <em>Command</em> box.</li>
+<li>Click <em>Edit Line</em> to save the edit, or click <em>cancel</em> to cancel the edit.</li>
+</ol>
+
+<p><strong>Delete a cron job</strong></p>
+<ol>
+<li>Click <em>Delete</em> to the right of the appropriate command in the <em>Current Cron Jobs</em> table.</li>
+<li>Click <em>Delete</em> to confirm the deletion, or click <em>cancel</em> to cancel the deletion.</li>
+</ol>
+			<div id="helplinks">
+				<h2>Help Links:</h2>
+				<ul>
+					<li><a href="http://www.cpanel.net/docs/cpanel/index.cgi?build=11.44.1.18&amp;basetheme=x3&amp;theme=x3" target="_blank" class="bottomlink">Full Interface Documentation</a></li>
+					<li><a href="../tutorial.html" target="_blank">Video Tutorials</a></li>
+					
+					<li>
+			        <a href="../contact/contactinfo.html" target="_blank">Contact Customer Support</a>
+			        </li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Help Code -->
+<!-- Begin js2 auto include -->
+<script type="text/javascript">
+//<![CDATA[
+var VALID={},OPEN_MODULE=null,EDIT_VALID={},EMAIL_VALID,typeof_validator=function(e){return typeof e.add!="function"?!1:typeof e.attach!="function"?!1:typeof e.title!="string"?!1:!0},load_cron_table=function(){var e=YAHOO.util.Dom.get("cron_jobs"),t={success:function(t){e.innerHTML=t.responseText},error:function(t){e.innerHTML=CPANEL.icons.error+" "+CPANEL.lang.ajax_error+": "+CPANEL.lang.ajax_try_again}};YAHOO.util.Connect.asyncRequest("GET","cron_entries.html",t,"");var n=YAHOO.util.Region.getRegion(e);n.height>0?e.innerHTML='<div style="height: '+n.height+'px"><div style="padding: 15px">'+CPANEL.icons.ajax+" "+CPANEL.lang.ajax_loading+"</div></div>":e.innerHTML='<div style="padding: 15px">'+CPANEL.icons.ajax+" "+CPANEL.lang.ajax_loading+"</div>"},reset_all_input=function(e){e||(e=""),reset_input_fields(e),reset_option_fields(e);if(e==""){YAHOO.util.Dom.get("common_options").value="--";for(var t in VALID)if(VALID.hasOwnProperty(t)){if(typeof_validator(VALID[t])==0)continue;VALID[t].clear_messages()}}else YAHOO.util.Dom.get("common_options_"+e).value="--"},reset_input_fields=function(e){e?e="_"+e:e="",YAHOO.util.Dom.get("minute"+e).value="",YAHOO.util.Dom.get("hour"+e).value="",YAHOO.util.Dom.get("day"+e).value="",YAHOO.util.Dom.get("month"+e).value="",YAHOO.util.Dom.get("weekday"+e).value="",YAHOO.util.Dom.get("command"+e).value=""},reset_option_fields=function(e){e?e="_"+e:e="",YAHOO.util.Dom.get("minute_options"+e).value="--",YAHOO.util.Dom.get("hour_options"+e).value="--",YAHOO.util.Dom.get("day_options"+e).value="--",YAHOO.util.Dom.get("month_options"+e).value="--",YAHOO.util.Dom.get("weekday_options"+e).value="--"},select_common_option=function(e){var t;e?t="_"+e:t="";var n=YAHOO.util.Dom.get("common_options"+t).value;if(n!="--"){var r=n.split(" ");YAHOO.util.Dom.get("minute"+t).value=r[0],YAHOO.util.Dom.get("hour"+t).value=r[1],YAHOO.util.Dom.get("day"+t).value=r[2],YAHOO.util.Dom.get("month"+t).value=r[3],YAHOO.util.Dom.get("weekday"+t).value=r[4],check_common_options(),t==""?(VALID.minute.verify(),VALID.hour.verify(),VALID.day.verify(),VALID.month.verify(),VALID.weekday.verify()):(EDIT_VALID.minute.verify(),EDIT_VALID.hour.verify(),EDIT_VALID.day.verify(),EDIT_VALID.month.verify(),EDIT_VALID.weekday.verify())}},select_single_option=function(e,t){t?t="_"+t:t="";var n=YAHOO.util.Dom.get(e+"_options"+t).value;n!="--"&&(YAHOO.util.Dom.get(e+t).value=n),VALID[e].verify(),check_common_options()},validate_minute_field=function(e){return validate_cron_field(YAHOO.util.Dom.get(e).value,0,59)},validate_hour_field=function(e){return validate_cron_field(YAHOO.util.Dom.get(e).value,0,23)},validate_day_field=function(e){return validate_cron_field(YAHOO.util.Dom.get(e).value,1,31)},validate_month_field=function(e){var t=YAHOO.util.Dom.get(e).value;return t=t.toLowerCase(),t=t.replace("jan",1),t=t.replace("feb",2),t=t.replace("mar",3),t=t.replace("apr",4),t=t.replace("may",5),t=t.replace("jun",6),t=t.replace("jul",7),t=t.replace("aug",8),t=t.replace("sep",9),t=t.replace("oct",10),t=t.replace("nov",11),t=t.replace("dec",12),validate_cron_field(t,1,12)},validate_weekday_field=function(e){var t=YAHOO.util.Dom.get(e).value;return t=t.toLowerCase(),t=t.replace("sun",0),t=t.replace("mon",1),t=t.replace("tue",2),t=t.replace("wed",3),t=t.replace("thu",4),t=t.replace("fri",5),t=t.replace("sat",6),validate_cron_field(t,0,7)},validate_cron_field=function(e,t,n){var r=e.split(",");for(var i=0;i<r.length;i++)if(r.hasOwnProperty(i))if(r[i].search("-")!=-1){var s=r[i].split("-");if(s.length!=2)return!1;if(validate_cron_unit(s[0],t,n)==0)return!1;if(validate_cron_unit(s[1],t,n)==0)return!1;s[0]=parseInt(s[0]),s[1]=parseInt(s[1]);if(s[0]>=s[1])return!1}else if(r[i].search("/")!=-1){var o=r[i].split("/");if(o.length!=2)return!1;if(validate_cron_unit(o[0],t,n,true)==0)return!1;if(validate_cron_unit(o[1],t,n)==0)return!1}else if(validate_cron_unit(r[i],t,n,true)==0)return!1;return!0},validate_cron_unit=function(e,t,n,r){return r&&e=="*"?!0:CPANEL.validate.positive_integer(e)==1&&e>=t&&e<=n?!0:!1},check_common_options=function(e){e?e="_"+e:e="";var t=YAHOO.util.Dom.get("minute"+e).value;select_if_equal(t,"minute_options"+e);var n=YAHOO.util.Dom.get("hour"+e).value;select_if_equal(n,"hour_options"+e);var r=YAHOO.util.Dom.get("day"+e).value;select_if_equal(r,"day_options"+e);var i=YAHOO.util.Dom.get("month"+e).value;select_if_equal(i,"month_options"+e);var s=YAHOO.util.Dom.get("weekday"+e).value;select_if_equal(s,"weekday_options"+e);var o=t+" "+n+" "+r+" "+i+" "+s;select_if_equal(o,"common_options"+e)},select_if_equal=function(e,t){var n=document.getElementById(t).options,r=!1;for(var i=0;i<n.length;i++)n[i].value==e&&(n[i].selected=!0,r=!0);r==0&&(n[0].selected=!0)},add_new_cron_job=function(){if(window.demo_mode)return;var e={cpanel_jsonapi_version:2,cpanel_jsonapi_module:"Cron",cpanel_jsonapi_func:"add_line",minute:YAHOO.util.Dom.get("minute").value,hour:YAHOO.util.Dom.get("hour").value,day:YAHOO.util.Dom.get("day").value,month:YAHOO.util.Dom.get("month").value,weekday:YAHOO.util.Dom.get("weekday").value,command:YAHOO.util.Dom.get("command").value},t=function(){YAHOO.util.Dom.get("add_new_cron").disabled=!1,YAHOO.util.Dom.get("add_new_cron_status").innerHTML=""},n={success:function(e){try{var n=YAHOO.lang.JSON.parse(e.responseText);n.cpanelresult.data&&n.cpanelresult.data[0].status=="1"?(CPANEL.widgets.status_bar("add_cron_status_bar","success",LANG.added_cron_job),reset_all_input(),load_cron_table()):CPANEL.widgets.status_bar("add_cron_status_bar","error",CPANEL.lang.Error,n.cpanelresult.error||n.cpanelresult.data[0].statusmsg)}catch(r){CPANEL.widgets.status_bar("add_cron_status_bar","error",CPANEL.lang.json_error,CPANEL.lang.json_parse_failed)}t()},failure:function(e){t(),CPANEL.widgets.status_bar("add_cron_status_bar","error",CPANEL.lang.ajax_error,CPANEL.lang.ajax_try_again)}};YAHOO.util.Connect.asyncRequest("GET",CPANEL.urls.json_api(e),n,""),YAHOO.util.Dom.get("add_new_cron").disabled=!0,YAHOO.util.Dom.get("add_new_cron_status").innerHTML=CPANEL.icons.ajax+" "+LANG.adding_cron_job},toggle_module=function(e){if(OPEN_MODULE!==e&&YAHOO.util.Dom.getStyle(OPEN_MODULE,"display")=="block"){var t=OPEN_MODULE;before_hide_module(t),CPANEL.animate.slide_up(t,function(){after_hide_module(t)})}YAHOO.util.Dom.getStyle(e,"display")!="none"?(before_hide_module(e),CPANEL.animate.slide_up(e,function(){after_hide_module(e)})):(before_show_module(e),CPANEL.animate.slide_down(e,function(){after_show_module(e)}),OPEN_MODULE=e)},before_show_module=function(e){var t=e.split("_"),n=t[0],r=t[2];n=="edit"&&(YAHOO.util.Dom.get("minute_"+r).value=YAHOO.util.Dom.get("minute_info_"+r).innerHTML,YAHOO.util.Dom.get("hour_"+r).value=YAHOO.util.Dom.get("hour_info_"+r).innerHTML,YAHOO.util.Dom.get("day_"+r).value=YAHOO.util.Dom.get("day_info_"+r).innerHTML,YAHOO.util.Dom.get("month_"+r).value=YAHOO.util.Dom.get("month_info_"+r).innerHTML,YAHOO.util.Dom.get("weekday_"+r).value=YAHOO.util.Dom.get("weekday_info_"+r).innerHTML,YAHOO.util.Dom.get("command_"+r).value=YAHOO.util.Dom.get("command_info_"+r).value,EDIT_VALID.minute=new CPANEL.validate.validator(LANG.Minute),EDIT_VALID.minute.add("minute_"+r,function(){return validate_minute_field("minute_"+r)},LANG.cron_field_not_valid),EDIT_VALID.minute.attach(),EDIT_VALID.hour=new CPANEL.validate.validator(LANG.Hour),EDIT_VALID.hour.add("hour_"+r,function(){return validate_hour_field("hour_"+r)},LANG.cron_field_not_valid),EDIT_VALID.hour.attach(),EDIT_VALID.day=new CPANEL.validate.validator(LANG.Day),EDIT_VALID.day.add("day_"+r,function(){return validate_day_field("day_"+r)},LANG.cron_field_not_valid),EDIT_VALID.day.attach(),EDIT_VALID.month=new CPANEL.validate.validator(LANG.Month),EDIT_VALID.month.add("month_"+r,function(){return validate_month_field("month_"+r)},LANG.cron_field_not_valid),EDIT_VALID.month.attach(),EDIT_VALID.weekday=new CPANEL.validate.validator(LANG.Weekday),EDIT_VALID.weekday.add("weekday_"+r,function(){return validate_weekday_field("weekday_"+r)},LANG.cron_field_not_valid),EDIT_VALID.weekday.attach(),EDIT_VALID.command=new CPANEL.validate.validator(LANG.Command),EDIT_VALID.command.add("command_"+r,"min_length(%input%, 1)",LANG.command_not_empty),EDIT_VALID.command.attach(),CPANEL.validate.attach_to_form("edit_line_"+r,EDIT_VALID,function(){edit_line(r)}),CPANEL.util.catch_enter(["minute_"+r,"hour_"+r,"day_"+r,"month_"+r,"weekday_"+r,"command_"+r],"edit_line_"+r))},before_hide_module=function(e){var t=e.split("_"),n=t[0],r=t[2];if(n=="edit"){for(var i in EDIT_VALID)if(EDIT_VALID.hasOwnProperty(i)){if(typeof_validator(EDIT_VALID[i])==0)continue;EDIT_VALID[i].clear_messages()}YAHOO.util.Event.purgeElement(e,!0)}},after_show_module=function(e){},after_hide_module=function(e){},edit_line=function(e){if(window.demo_mode)return;var t=YAHOO.util.Dom.get("minute_"+e).value,n=YAHOO.util.Dom.get("hour_"+e).value,r=YAHOO.util.Dom.get("day_"+e).value,i=YAHOO.util.Dom.get("month_"+e).value,s=YAHOO.util.Dom.get("weekday_"+e).value,o=YAHOO.util.Dom.get("command_"+e).value,u=YAHOO.util.Dom.get("linekey_"+e).value,a={cpanel_jsonapi_version:2,cpanel_jsonapi_module:"Cron",cpanel_jsonapi_func:"edit_line",minute:t,hour:n,day:r,month:i,weekday:s,command:o,linekey:u},f=function(){YAHOO.util.Dom.setStyle("edit_input_"+e,"display","block"),YAHOO.util.Dom.get("edit_status_"+e).innerHTML=""},l={success:function(u){try{var a=YAHOO.lang.JSON.parse(u.responseText);a.cpanelresult.data[0].status=="1"?(YAHOO.util.Dom.get("minute_info_"+e).innerHTML=t,YAHOO.util.Dom.get("hour_info_"+e).innerHTML=n,YAHOO.util.Dom.get("day_info_"+e).innerHTML=r,YAHOO.util.Dom.get("month_info_"+e).innerHTML=i,YAHOO.util.Dom.get("weekday_info_"+e).innerHTML=s,YAHOO.util.Dom.get("command_htmlsafe_"+e).innerHTML=o.html_encode(),YAHOO.util.Dom.get("command_info_"+e).value=o,YAHOO.util.Dom.get("linekey_"+e).value=a.cpanelresult.data[0].linekey,CPANEL.widgets.status_bar("status_bar_"+e,"success",LANG.edit_successful),toggle_module("edit_module_"+e)):CPANEL.widgets.status_bar("status_bar_"+e,"error",CPANEL.lang.Error,a.cpanelresult.data[0].statusmsg)}catch(l){CPANEL.widgets.status_bar("status_bar_"+e,"error",CPANEL.lang.json_error,CPANEL.lang.json_parse_failed)}f()},failure:function(t){f(),CPANEL.widgets.status_bar("status_bar_"+e,"error",CPANEL.lang.ajax_error,CPANEL.lang.ajax_try_again)}};YAHOO.util.Connect.asyncRequest("GET",CPANEL.urls.json_api(a),l,""),YAHOO.util.Dom.setStyle("edit_input_"+e,"display","none"),YAHOO.util.Dom.get("edit_status_"+e).innerHTML=CPANEL.icons.ajax+" "+LANG.editing_cron_job},delete_line=function(e){if(window.demo_mode)return;var t={cpanel_jsonapi_version:2,cpanel_jsonapi_module:"Cron",cpanel_jsonapi_func:"remove_line",linekey:YAHOO.util.Dom.get("linekey_"+e).value},n=function(){YAHOO.util.Dom.setStyle("delete_input_"+e,"display","block"),YAHOO.util.Dom.get("delete_status_"+e).innerHTML=""},r=function(){var e=YAHOO.util.Dom.getElementsByClassName("dt_info_row","tr","cron_jobs_table"),t=!0;for(var n=0;n<e.length;n++)YAHOO.util.Dom.getStyle(e[n],"display")!="none"&&(t=!1);t==1&&load_cron_table()},i={success:function(t){try{var i=YAHOO.lang.JSON.parse(t.responseText);i.cpanelresult.data[0].status=="1"?(CPANEL.animate.fade_out("info_row_"+e),CPANEL.animate.fade_out("delete_module_"+e,r)):(n(),CPANEL.widgets.status_bar("status_bar_"+e,"error",CPANEL.lang.Error,i.cpanelresult.data[0].statusmsg))}catch(s){n(),CPANEL.widgets.status_bar("status_bar_"+e,"error",CPANEL.lang.json_error,CPANEL.lang.json_parse_failed)}},failure:function(t){n(),CPANEL.widgets.status_bar("status_bar_"+e,"error",CPANEL.lang.ajax_error,CPANEL.lang.ajax_try_again)}};YAHOO.util.Connect.asyncRequest("GET",CPANEL.urls.json_api(t),i,""),YAHOO.util.Dom.setStyle("delete_input_"+e,"display","none"),YAHOO.util.Dom.get("delete_status_"+e).innerHTML=CPANEL.icons.ajax+" "+LANG.deleting_cron_job},validate_cron_email=function(){var e=YAHOO.util.Dom.get("email").value;if(e=="")return!0;var t=new RegExp("^[@!:\\%\\-\\.,_+]");return t.test(e)?!1:e==SYSTEM_ACCOUNT?!0:CPANEL.validate.email(e)},setup_email=function(){EMAIL_VALID=new CPANEL.validate.validator(LANG.email_address),EMAIL_VALID.add("email",validate_cron_email,LANG.cron_valid_email),EMAIL_VALID.attach(),CPANEL.validate.attach_to_form("update_email",EMAIL_VALID,change_email),CPANEL.util.catch_enter("email","update_email")},change_email=function(){if(window.demo_mode)return;var e=YAHOO.util.Dom.get("email").value;if(e==""){var t=confirm(LANG.confirm_empty_email);if(t==0){EMAIL_VALID.clear_messages();return}}var n={cpanel_jsonapi_version:2,cpanel_jsonapi_module:"Cron",cpanel_jsonapi_func:"set_email",email:e},r={success:function(t){EMAIL_VALID.clear_messages();try{var n=YAHOO.lang.JSON.parse(t.responseText);n.cpanelresult.data[0].status=="1"?(YAHOO.util.Dom.get("update_email").disabled=!1,YAHOO.util.Dom.get("email_status").innerHTML="",CPANEL.widgets.status_bar("email_status_bar","success",LANG.email_updated),YAHOO.util.Dom.get("current_email").innerHTML=e,YAHOO.util.Dom.get("email").value=""):(YAHOO.util.Dom.get("update_email").disabled=!1,YAHOO.util.Dom.get("email_status").innerHTML="",CPANEL.widgets.status_bar("email_status_bar","error",CPANEL.lang.Error,n.cpanelresult.data[0].statusmsg))}catch(r){YAHOO.util.Dom.get("update_email").disabled=!1,YAHOO.util.Dom.get("email_status").innerHTML="",CPANEL.widgets.status_bar("email_status_bar","error",CPANEL.lang.json_error,CPANEL.lang.json_parse_failed)}check_empty_email()},failure:function(e){EMAIL_VALID.clear_messages(),YAHOO.util.Dom.get("update_email").disabled=!1,YAHOO.util.Dom.get("email_status").innerHTML="",CPANEL.widgets.status_bar("email_status_bar","error",CPANEL.lang.ajax_error,CPANEL.lang.ajax_try_again),check_empty_email()}};YAHOO.util.Connect.asyncRequest("GET",CPANEL.urls.json_api(n),r,""),YAHOO.util.Dom.get("update_email").disabled=!0,YAHOO.util.Dom.get("email_status").innerHTML=CPANEL.icons.ajax+" "+LANG.changing_email},init_email_div=function(){var e=YAHOO.util.Dom.get("current_email").innerHTML;e!=""&&(YAHOO.util.Dom.setStyle("edit_cron_email","display","block"),YAHOO.util.Dom.get("email_toggle_more_less").innerHTML=CPANEL.lang.toggle_less)},check_empty_email=function(){var e=YAHOO.util.Dom.get("current_email");e.innerHTML==""&&(e.innerHTML="("+LANG.none+")")},init=function(){if(CRONTAB_PERMISSIONS_ERROR==1){YAHOO.util.Dom.setStyle("crontab_interface","display","none"),YAHOO.util.Dom.addClass("crontab_permissions_error","highlight2"),YAHOO.util.Dom.addClass("crontab_permissions_error","cjt_status_bar_error"),YAHOO.util.Dom.setStyle("crontab_permissions_error","display","block");return}VALID.minute=new CPANEL.validate.validator(LANG.Minute),VALID.minute.add("minute",function(){return validate_minute_field("minute")},LANG.cron_field_not_valid),VALID.minute.attach(),VALID.hour=new CPANEL.validate.validator(LANG.Hour),VALID.hour.add("hour",function(){return validate_hour_field("hour")},LANG.cron_field_not_valid),VALID.hour.attach(),VALID.day=new CPANEL.validate.validator(LANG.Day),VALID.day.add("day",function(){return validate_day_field("day")},LANG.cron_field_not_valid),VALID.day.attach(),VALID.month=new CPANEL.validate.validator(LANG.Month),VALID.month.add("month",function(){return validate_month_field("month")},LANG.cron_field_not_valid),VALID.month.attach(),VALID.weekday=new CPANEL.validate.validator(LANG.Weekday),VALID.weekday.add("weekday",function(){return validate_weekday_field("weekday")},LANG.cron_field_not_valid),VALID.weekday.attach(),VALID.command=new CPANEL.validate.validator(LANG.Command),VALID.command.add("command","min_length(%input%, 1)",LANG.command_not_empty),VALID.command.attach(),YAHOO.util.Event.on(["minute","hour","day","month","weekday"],"change",function(){check_common_options()}),CPANEL.validate.attach_to_form("add_new_cron",VALID,add_new_cron_job),CPANEL.util.catch_enter(["minute","hour","day","month","weekday","command"],"add_new_cron"),setup_email(),init_email_div(),check_empty_email(),load_cron_table()};YAHOO.util.Event.onDOMReady(init);
+//]]>
+</script>
+<!-- End js2 auto include -->
+</body>
+</html>
+<!-- END stdfooter.html -->
+
+<!-- cPanel [11.44] (pro,vps,attracta,vps) Copyright (c) 2013 cPanel, Inc. Licensed on vps.ultimateprize.net -->
